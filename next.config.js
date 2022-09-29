@@ -7,7 +7,7 @@ const nextConfig = {
 module.exports = {
   images: {
     domains: [
-      'images.unsplash.com','im.vsco.co', 'kevinspictures.netlify.app'
+      'images.unsplash.com','im.vsco.co'
     ]
   }
 }

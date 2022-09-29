@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className={
          nav
          ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-white text-center text-3xl ease-in duration-200 z-[9] sticky'
-         : 'sm:hidden absolute top-[-100%] left-0] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+         : 'sm:hidden absolute top-[-200%] left-0] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
       }>
         <ul>
           <li onClick={handleNav} className='py-5'><Link href='/'>Home</Link></li>

@@ -6,7 +6,8 @@ import { SiVsco, SiUnsplash } from 'react-icons/si'
 function Footer() {
   return (
     <div className='justify-between text-white bottom-0 p-5 m-1 flex items-center'>
-      <h1 className='text-4xl font-bold cursor-pointer hover:tracking-widest'>KEV</h1>
+      <Link href='#'><h1 className='text-4xl font-bold cursor-pointer hover:tracking-widest'>KEV</h1>
+        </Link>
       <p className='text-sm pl-3 hidden sm:flex'>© 2022 KevinPictures</p>
       <ul className='flex'>
         <h1 className='text-xl px-3 w-auto hidden sm:flex'>
@@ -23,7 +24,6 @@ function Footer() {
         <Link href='https://unsplash.com/@grandaragornd' target='_blank'>
           <li className='px-3 cursor-pointer'><SiUnsplash  size={26}/></li>
         </Link>
-        
       </ul>
     </div>
   )
