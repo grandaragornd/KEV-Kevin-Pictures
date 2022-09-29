@@ -1,24 +1,19 @@
 import React from 'react'
+import Link from 'next/link'
 
 function Featured() {
   return (
-    <div className='h-screen w-full p-4 custom-img2 bg-cover bg-fixed'>
-      <div class="socials">
-      <div class="card text-center card-vsco">
-        <div class="card-body">
-          <h2 class="card-title">VSCO picture collection</h2>
-          <p class="card-text">Click to see all pictures</p>
-          <a target="_blank" href="https://vsco.co/saintkevinst/gallery" class="btn bg-dark">@saintkevinst</a>
+    <div className='w-full p-4 custom-img2 bg-cover bg-fixed'>
+     <div className='grid md:grid-cols-2 text-center text-white w-full items-center justify-center gap-4'>
+        <div className='shadow-2xl rounded-2xl shadow-black black p-5 w-full '>
+          <h1 className='text-2xl'>VSCO Collection</h1>
+          <Link href='https://vsco.co/saintkevinst/gallery' target='_blank' rel="noreferrer"><button className='p-2 m-4 border-solid border-2 border-white rounded-xl'>Check out!</button></Link>
         </div>
-      </div>
-      <div class="card text-center card-vsco">
-        <div class="card-body">
-          <h2 class="card-title">Unsplash picture collection</h2>
-          <p class="card-text">Click to see all pictures</p>
-          <a target="_blank" href="https://unsplash.com/@grandaragornd" class="btn bg-dark">@grandaragornd</a>
+        <div className='shadow-xl rounded-2xl shadow-black p-5 w-full bg-stone-900/50'>
+          <h1 className='text-2xl'>Unsplash Collection</h1>
+          <Link href='https://unsplash.com/@grandaragornd' target='_blank' rel="noreferrer"><button className='p-2 m-4 border-solid border-2 border-white rounded-xl'>Check out!</button></Link>
         </div>
-      </div>
-    </div>
+     </div>
     </div>
   )
 }

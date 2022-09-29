@@ -12,16 +12,16 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='w-full h-20 flex fixed justify-between items-center z-10 ease-in duration-300 text-white bg-slate-900/50'>
+    <div className='w-full h-20 flex fixed justify-between items-center z-10 ease-in duration-300 text-white bg-stone-900/50'>
       <div className='p-4'>
         <h1 className='text-4xl font-bold cursor-pointer hover:tracking-widest'>KEV</h1>
       </div>
       <div>
         <ul className='flex items-center hidden sm:flex text-lg'>
-          <li className='p-4 hover:scale-75 ease-in duration-200 transform-none'><Link href='/'>Home</Link></li>
-          <li className='p-4 hover:scale-75 ease-in duration-200 transform-none'><Link href='/#pictures'>Slider</Link></li>
-          <li className='p-4 hover:scale-75 ease-in duration-200 transform-none'><Link href='/#vscocards'>Featured</Link></li>
-          <li className='p-4 hover:scale-75 ease-in duration-200 transform-none'><Link href='/story'>Story</Link></li>
+          <li className='p-4'><Link href='/'>Home</Link></li>
+          <li className='p-4'><Link href='/#pictures'>Slider</Link></li>
+          <li className='p-4'><Link href='/#vscocards'>Featured</Link></li>
+          <li className='p-4'><Link href='/story'>Story</Link></li>
         </ul>
       </div>
 
