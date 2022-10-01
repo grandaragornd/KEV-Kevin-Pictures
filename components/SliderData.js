@@ -87,4 +87,20 @@ export const VscoCards = [
         image: 'https://im.vsco.co/aws-us-west-2/89d3ab/92119293/5d13845971277c3247000001/vsco5d13845f8fb0a.jpg',
         id: 'kids'
     },
+    {
+        image: 'https://im.vsco.co/aws-us-west-2/89d3ab/92119293/5dd1535b71277c69f1000001/vsco5dd1535ce8609.jpg',
+        id: 'room'
+    },
+    {
+        image: 'https://im.vsco.co/aws-us-west-2/89d3ab/92119293/5d62520071277c448a000001/vsco5d62520552691.jpg',
+        id: 'jungferstig'
+    },
+    {
+        image: 'https://im.vsco.co/aws-us-west-2/89d3ab/92119293/5d34daa871277c27ec000002/vsco5d34daac4272b.jpg',
+        id: 'sunset'
+    },
+    {
+        image: 'https://im.vsco.co/aws-us-west-2/89d3ab/92119293/5d1d06ab71277c02e6000001/vsco5d1d06b1a41f9.jpg',
+        id: 'messehallen'
+    }
 ]

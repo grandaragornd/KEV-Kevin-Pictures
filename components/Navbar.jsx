@@ -1,7 +1,8 @@
-import Link from 'next/link'
+//import Link from 'next/link'
 import React from 'react'
 import { AiOutlineMenu, AiOutlineClose  } from "react-icons/ai";
 import { useState } from 'react'
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
 
@@ -17,11 +18,11 @@ const Navbar = () => {
         <h1 className='text-4xl font-bold cursor-pointer hover:tracking-widest'>KEV</h1>
       </div>
       <div>
-        <ul className='flex items-center hidden sm:flex text-lg'>
-          <li className='p-4'><Link href='/'>Home</Link></li>
-          <li className='p-4'><Link href='/#pictures'>Slider</Link></li>
-          <li className='p-4'><Link href='/#vscocards'>Featured</Link></li>
-          <li className='p-4'><Link href='/story'>Story</Link></li>
+        <ul className='flex items-center hidden sm:flex text-lg px-4'>
+          <li className='p-4'><Link to='home'spy={true} smooth={true} offset={50} duration={500} activeClass='active' >Home</Link></li>
+          <li className='p-4'><Link to='pictures' spy={true} smooth={true} offset={50} duration={500} activeClass='active'>Slider</Link></li>
+          <li className='p-4'><Link to='vscocards' spy={true} smooth={true} offset={50} duration={500} activeClass='active'>Featured</Link></li>
+          <li className='p-4'><Link to='story' spy={true} smooth={true} offset={50} duration={500} activeClass='active'>Story</Link></li>
         </ul>
       </div>
 
@@ -36,10 +37,10 @@ const Navbar = () => {
          : 'sm:hidden absolute top-[-200%] left-0] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
       }>
         <ul>
-          <li onClick={handleNav} className='py-5'><Link href='/'>Home</Link></li>
-          <li onClick={handleNav} className='py-5'><Link href='#pictures'>Pictures</Link></li>
-          <li onClick={handleNav} className='py-5'><Link href='#vscocards'>Featured</Link></li>
-          <li onClick={handleNav} className='py-5'><Link href='/story'>Story</Link></li>
+          <li className='py-5'><Link onClick={handleNav} to='home'spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
+          <li className='py-5'><Link onClick={handleNav} to='pictures' spy={true} smooth={true} offset={50} duration={500}>Slider</Link></li>
+          <li className='py-5'><Link onClick={handleNav} to='vscocards' spy={true} smooth={true} offset={50} duration={500}>Featured</Link></li>
+          <li className='py-5'><Link onClick={handleNav} to='story' spy={true} smooth={true} offset={50} duration={500}>Story</Link></li>
         </ul>
         </div>
     </>

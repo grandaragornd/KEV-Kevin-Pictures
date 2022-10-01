@@ -40,7 +40,7 @@ const Pictures = ({slides, title, description}) => {
                             src={slides.image}
                             alt='/'
                             width='1000px'
-                            height='1000px'
+                            height='1200px'
                             objectFit='cover'
                             />
                         )}
