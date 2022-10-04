@@ -3,7 +3,6 @@ import Hero from "../components/Hero";
 import Pictures from "../components/Pictures"
 import VscoGrid from "../components/VscoGrid";
 import { SliderData, VscoCards } from "../components/SliderData";
-import Story from "../components/Story";
 
 
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
           <Hero heading='Kevin Pictures' message='A special place for my pictures!'/>
           <Pictures key='sliderindex' slides={SliderData}/>
           <VscoGrid key='cardsindex' cards={VscoCards}/>
-          <Story />
           <Featured />
     </>
   );

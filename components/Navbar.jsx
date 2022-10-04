@@ -19,10 +19,9 @@ const Navbar = () => {
       </div>
       <div>
         <ul className='flex items-center hidden sm:flex text-lg px-4'>
-          <li className='p-4'><Link to='home'spy={true} smooth={true} offset={50} duration={500} activeClass='active' >Home</Link></li>
-          <li className='p-4'><Link to='pictures' spy={true} smooth={true} offset={50} duration={500} activeClass='active'>Slider</Link></li>
-          <li className='p-4'><Link to='vscocards' spy={true} smooth={true} offset={50} duration={500} activeClass='active'>Featured</Link></li>
-          <li className='p-4'><Link to='story' spy={true} smooth={true} offset={50} duration={500} activeClass='active'>Story</Link></li>
+          <li className='p-4'><Link to='home'spy={true} smooth={true} offset={50} duration={500} activeClass='active'className='cursor-pointer' >Home</Link></li>
+          <li className='p-4'><Link to='pictures' spy={true} smooth={true} offset={50} duration={500} activeClass='active' className='cursor-pointer'>Slider</Link></li>
+          <li className='p-4'><Link to='vscocards' spy={true} smooth={true} offset={50} duration={500} activeClass='active' className='cursor-pointer'>Featured</Link></li>
         </ul>
       </div>
 
@@ -40,7 +39,6 @@ const Navbar = () => {
           <li className='py-5'><Link onClick={handleNav} to='home'spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
           <li className='py-5'><Link onClick={handleNav} to='pictures' spy={true} smooth={true} offset={50} duration={500}>Slider</Link></li>
           <li className='py-5'><Link onClick={handleNav} to='vscocards' spy={true} smooth={true} offset={50} duration={500}>Featured</Link></li>
-          <li className='py-5'><Link onClick={handleNav} to='story' spy={true} smooth={true} offset={50} duration={500}>Story</Link></li>
         </ul>
         </div>
     </>

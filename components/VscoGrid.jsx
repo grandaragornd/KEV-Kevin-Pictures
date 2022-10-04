@@ -4,7 +4,7 @@ import { VscoCards } from "../components/SliderData";
 
 function VscoGrid({cards}) {
   return (
-    <div className='w-full p-4 w-full' id='vscocards'>
+    <div className='w-full p-4 w-full'>
       <div className='text-white py-10 text-3xl text-center'>
           <h1>VSCO Featured</h1>
       </div>
