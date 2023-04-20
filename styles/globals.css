@@ -28,3 +28,22 @@ a {
 .custom-img2{
   background-image: url('https://images.unsplash.com/photo-1664278783010-e45925ae33e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
 }
+
+.hidenav{
+  opacity: 0;
+  transition: 0.25s;
+  transition-timing-function: ease-out;
+  
+}
+
+.shownav{
+  opacity: 1;
+  transition: 0.25s;
+  transition-timing-function: ease-in;
+}
+
+.hoverbutton:hover{
+  color: #212121;
+  background-color: azure;
+  border-radius: 5px;
+}
